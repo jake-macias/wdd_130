@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Feed Sign Up</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #6d5434;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: white;
+            border: 5px solid #0a2472;
+            border-radius: 20px;
+            max-width: 500px;
+            margin: 40px auto;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-image {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .header-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
+            pointer-events: none;
+            line-height: 1.2em;
+        }
+
+        form h3 {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 1.2em;
+        }
+
+        form table {
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        form td {
+            padding: 8px;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form input[type="email"] {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        form input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        .checkbox-group {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 0 auto 15px;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #ccc;
+        }
+
+        .image-grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: black;
+            border-top: 2px solid #0a2472;
+        }
+
+        .image-grid img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <div class="header-image">
+        <img src="images/jesus_feeds_5000.jpeg" alt="Jesus Feeding 5000">
+        <div class="header-title">
+            <strong>Daily Feed</strong><br>
+            <span>Scripture a Day</span>
+        </div>
+    </div>
+
+    <h3>Sign Up for Daily Scripture Feed</h3>
+    <table>
+        <tr><td>User Name:</td><td><input type="text" name="username"></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+        <tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+    </table>
+
+    <div class="checkbox-group">
+        <input type="checkbox" name="newsletter"> Subscribe to newsletter<br>
+        <input type="checkbox" name="terms"> I acknowledge the terms and conditions
+    </div>
+
+    <input type="submit" class="submit-btn" value="Submit">
+
+    <div class="image-grid">
+        <img src="images/old_testament.webp" alt="Old Testament">
+        <img src="images/new_testament.webp" alt="New Testament">
+        <img src="images/book_of_mormon.webp" alt="Book of Mormon">
+        <img src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+        <img src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+    </div>
+</form>
+</body>
+</html>
